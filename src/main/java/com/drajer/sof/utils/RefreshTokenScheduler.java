@@ -41,6 +41,12 @@ public class RefreshTokenScheduler {
   /** The Constant SCOPE. */
   private static final String SCOPE = "scope";
 
+  /** The Constant CLIENT_ID. */
+  private static final String CLIENT_ID = "client_id";
+
+    /** The Constant CLIENT_SECRET. */
+    private static final String CLIENT_SECRET = "client_secret";
+
   /** The Constant CLIENT_CREDENTIALS. */
   private static final String CLIENT_CREDENTIALS = "client_credentials";
 
@@ -142,6 +148,8 @@ public class RefreshTokenScheduler {
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
         map.add(GRANT_TYPE, CLIENT_CREDENTIALS);
         map.add(SCOPE, authDetails.getScope());
+        map.add(CLIENT_ID, authDetails.getClientId());
+        map.add(CLIENT_SECRET, authDetails.getClientSecret());
         if (Boolean.TRUE.equals(authDetails.getRequireAud())
             && Boolean.TRUE.equals(authDetails.getIsSystem())) {
           logger.debug("Adding Aud Parameter while getting AccessToken");
@@ -161,6 +169,12 @@ public class RefreshTokenScheduler {
                 + GRANT_TYPE
                 + "="
                 + CLIENT_CREDENTIALS
+                + "&"
+                + CLIENT_ID
+                + authDetails.getClientId()
+                + "&"
+                + CLIENT_SECRET
+                + authDetails.getClientSecret()
                 + "&"
                 + SCOPE
                 + "="
@@ -282,6 +296,8 @@ public class RefreshTokenScheduler {
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
         map.add(GRANT_TYPE, CLIENT_CREDENTIALS);
         map.add(SCOPE, clientDetails.getScopes());
+        map.add(CLIENT_ID, authDetails.getClientId());
+        map.add(CLIENT_SECRET, authDetails.getClientSecret());
         if (Boolean.TRUE.equals(clientDetails.getRequireAud())) {
           logger.debug("Adding Aud Parameter while getting Access token");
           map.add("aud", clientDetails.getFhirServerBaseURL());
@@ -303,8 +319,14 @@ public class RefreshTokenScheduler {
                 + "="
                 + CLIENT_CREDENTIALS
                 + "&"
+                + CLIENT_ID
+                + authDetails.getClientId()
+                + "&"
+                + CLIENT_SECRET
+                + authDetails.getClientSecret()
+                + "&"
                 + SCOPE
-                + "="
+                + "=popo"
                 + clientDetails.getScopes();
 
         HttpEntity<?> entity = new HttpEntity<>(headers);
