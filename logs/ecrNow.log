@@ -8044,3 +8044,10 @@ java.lang.NullPointerException: Cannot invoke "org.json.JSONObject.getString(Str
 2024-09-06 16:33:45.388 DEBUG 85964 --- [db-scheduler-execute-due-pool-2-thread-1] com.github.kagkarlsson.scheduler.Waiter  : Waiter start wait.
 2024-09-06 16:33:55.393 DEBUG 85964 --- [db-scheduler-execute-due-pool-2-thread-1] com.github.kagkarlsson.scheduler.Waiter  : Waiter start wait.
 2024-09-06 16:34:05.400 DEBUG 85964 --- [db-scheduler-execute-due-pool-2-thread-1] com.github.kagkarlsson.scheduler.Waiter  : Waiter start wait.
+2024-09-06 16:34:15.406 DEBUG 85964 --- [db-scheduler-execute-due-pool-2-thread-1] com.github.kagkarlsson.scheduler.Waiter  : Waiter start wait.
+2024-09-06 16:34:19.368  INFO 85964 --- [SpringApplicationShutdownHook] c.g.kagkarlsson.scheduler.Scheduler      : Shutting down Scheduler.
+2024-09-06 16:34:19.369 DEBUG 85964 --- [db-scheduler-execute-due-pool-2-thread-1] c.g.k.scheduler.RunUntilShutdown         : Thread 'db-scheduler-execute-due-pool-2-thread-1' interrupted due to shutdown.
+2024-09-06 16:34:19.370  INFO 85964 --- [SpringApplicationShutdownHook] c.github.kagkarlsson.scheduler.Executor  : Letting running executions finish. Will wait up to 2xPT30M.
+2024-09-06 16:34:19.370  INFO 85964 --- [SpringApplicationShutdownHook] c.github.kagkarlsson.scheduler.Executor  : Scheduler stopped.
+2024-09-06 16:34:19.382  INFO 85964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-06 16:34:19.387  INFO 85964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
