@@ -320,10 +320,10 @@ public class RefreshTokenScheduler {
                 + CLIENT_CREDENTIALS
                 + "&"
                 + CLIENT_ID
-                + authDetails.getClientId()
+                + clientDetails.getClientId()
                 + "&"
                 + CLIENT_SECRET
-                + authDetails.getClientSecret()
+                + clientDetails.getClientSecret()
                 + "&"
                 + SCOPE
                 + "=popo"
