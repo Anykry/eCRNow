@@ -296,8 +296,8 @@ public class RefreshTokenScheduler {
         MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
         map.add(GRANT_TYPE, CLIENT_CREDENTIALS);
         map.add(SCOPE, clientDetails.getScopes());
-        map.add(CLIENT_ID, authDetails.getClientId());
-        map.add(CLIENT_SECRET, authDetails.getClientSecret());
+        map.add(CLIENT_ID, clientDetails.getClientId());
+        map.add(CLIENT_SECRET, clientDetails.getClientSecret());
         if (Boolean.TRUE.equals(clientDetails.getRequireAud())) {
           logger.debug("Adding Aud Parameter while getting Access token");
           map.add("aud", clientDetails.getFhirServerBaseURL());
