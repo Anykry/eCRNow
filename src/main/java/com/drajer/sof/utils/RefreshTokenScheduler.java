@@ -44,8 +44,8 @@ public class RefreshTokenScheduler {
   /** The Constant CLIENT_ID. */
   private static final String CLIENT_ID = "client_id";
 
-    /** The Constant CLIENT_SECRET. */
-    private static final String CLIENT_SECRET = "client_secret";
+  /** The Constant CLIENT_SECRET. */
+  private static final String CLIENT_SECRET = "client_secret";
 
   /** The Constant CLIENT_CREDENTIALS. */
   private static final String CLIENT_CREDENTIALS = "client_credentials";
