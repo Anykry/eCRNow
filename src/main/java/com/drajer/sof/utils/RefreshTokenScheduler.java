@@ -269,7 +269,7 @@ public class RefreshTokenScheduler {
       }
     } catch (Exception e) {
       logger.error(
-          "5 - Error in Getting the AccessToken for the client: {}", launchDetails.getClientId(), e);
+          "5-Error in Getting the AccessToken for the client: {}", launchDetails.getClientId(), e);
     }
     return tokenResponse;
   }
