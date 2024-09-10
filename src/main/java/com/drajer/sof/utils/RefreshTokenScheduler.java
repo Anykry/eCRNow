@@ -354,7 +354,9 @@ public class RefreshTokenScheduler {
       }
     } catch (Exception e) {
       logger.error(
-          "6 - Error in Getting the AccessToken for the client: {}", clientDetails.getClientId(), e);
+          "6 - Error in Getting the AccessToken for the client: {}",
+          clientDetails.getClientId(),
+          e);
     }
     return tokenResponse;
   }
