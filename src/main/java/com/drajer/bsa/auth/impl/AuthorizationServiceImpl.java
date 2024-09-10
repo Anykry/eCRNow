@@ -91,7 +91,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 
     } catch (Exception e) {
       logger.error(
-          "Error in Getting the AccessToken for the client: {}", fsd.getFhirServerBaseURL(), e);
+          "2 - Error in Getting the AccessToken for the client: {}", fsd.getFhirServerBaseURL(), e);
     }
     return null;
   }

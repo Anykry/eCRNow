@@ -93,7 +93,7 @@ public class Authorization {
 
     } catch (Exception e) {
       logger.error(
-          "Error in Getting the AccessToken for the client: {}", tokenDetails.getClientId(), e);
+          "4 - Error in Getting the AccessToken for the client: {}", tokenDetails.getClientId(), e);
     }
     return tokenResponse;
   }

@@ -207,7 +207,7 @@ public class RefreshTokenScheduler {
 
     } catch (Exception e) {
       logger.error(
-          "Error in Getting the AccessToken for the Client: {}", authDetails.getClientId(), e);
+          " 1- Error in Getting the AccessToken for the Client: {}", authDetails.getClientId(), e);
     }
     return tokenResponse;
   }
@@ -269,7 +269,7 @@ public class RefreshTokenScheduler {
       }
     } catch (Exception e) {
       logger.error(
-          "Error in Getting the AccessToken for the client: {}", launchDetails.getClientId(), e);
+          "5 - Error in Getting the AccessToken for the client: {}", launchDetails.getClientId(), e);
     }
     return tokenResponse;
   }
@@ -354,7 +354,7 @@ public class RefreshTokenScheduler {
       }
     } catch (Exception e) {
       logger.error(
-          "Error in Getting the AccessToken for the client: {}", clientDetails.getClientId(), e);
+          "6 - Error in Getting the AccessToken for the client: {}", clientDetails.getClientId(), e);
     }
     return tokenResponse;
   }

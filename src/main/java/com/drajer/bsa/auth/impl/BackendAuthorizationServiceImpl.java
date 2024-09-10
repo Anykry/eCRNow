@@ -100,7 +100,7 @@ public class BackendAuthorizationServiceImpl implements AuthorizationService {
       return connectToServer(baseUrl, fsd);
     } catch (Exception e) {
       logger.error(
-          "Error in Getting the AccessToken for the client: {}", fsd.getFhirServerBaseURL(), e);
+          " 3 - Error in Getting the AccessToken for the client: {}", fsd.getFhirServerBaseURL(), e);
       return null;
     }
   }
